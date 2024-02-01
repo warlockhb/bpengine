@@ -24,7 +24,7 @@ def get_unique_filename(directory, base_name, extension):
 
     return unique_name
 
-
+# TODO 다른 .py 파일로 분류
 def clear_dir(dir_path):
     # 폴더 내의 모든 파일과 서브폴더 나열
     items = os.listdir(dir_path)
@@ -86,6 +86,7 @@ def auto_rename_image(img_path, model):
         # 파일 이름 변경
         os.rename(img_path, new_file_path)
         return label, new_file_path, new_name
+
 
 # TODO 오퍼레이션 파트와 중복 방지 및 통폐합
 def rename_texture_materials(model=MobileNetV2(weights='imagenet')):
