@@ -14,3 +14,5 @@ class PT_TEXTURE(bpy.types.Panel):
         layout.operator("texture.rename_by_ai")
 
         layout.operator("color.rename_by_ai")
+
+        layout.operator("material.change_materials")
